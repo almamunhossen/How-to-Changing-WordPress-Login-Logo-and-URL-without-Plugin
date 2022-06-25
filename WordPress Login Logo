@@ -1,0 +1,36 @@
+/*----login logo Ching ------*/
+function wpb_login_logo() { ?>
+    <style type="text/css">
+       #login h1 a, .login h1 a {
+       background-image: url(https://alreemprintingpress.com/wp-content/uploads/2020/03/Reem-Logo_Logo.svg); //--Change url--//
+       height:100px;
+       width:300px;
+       background-size: 300px 100px;
+       background-repeat: no-repeat;
+       }
+	.login form {
+   	 border: none;
+    	border-radius: 12px;
+    	color: #005AA9;
+	}
+
+	/*----- Chinge Button Full Width----- */
+
+	.wp-core-ui .button.button-large {
+    	width: 100%;
+    	background-color: red;
+    	border: none;
+   	margin-top: 10px;
+	}
+
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'wpb_login_logo' );
+
+/*-----Replace Logo Home page URL link -----*/
+
+function login_page_URL( $url ) {
+ $url = home_url( '/' );
+ return $url;
+}
+add_filter( 'login_headerurl', 'login_page_URL' );
