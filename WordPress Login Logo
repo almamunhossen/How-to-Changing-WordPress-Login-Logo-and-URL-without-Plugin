@@ -2,7 +2,7 @@
 function wpb_login_logo() { ?>
     <style type="text/css">
        #login h1 a, .login h1 a {
-       background-image: url(https://alreemprintingpress.com/wp-content/uploads/2020/03/Reem-Logo_Logo.svg); //--Change url--//
+       background-image: url(https://alreemprintingpress.com/wp-content/uploads/2020/03/Reem-Logo_Logo.svg); /*--Change url--*/
        height:100px;
        width:300px;
        background-size: 300px 100px;
